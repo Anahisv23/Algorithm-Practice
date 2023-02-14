@@ -21,3 +21,15 @@ const findDuplicates = (arr1, arr2) => {
 
   // space complexity: o(n)
   // time complexity: o(n + m)
+
+  function findDuplicates(arr1, arr2) {
+    let duplicates = [];
+
+    for (let number of arr1) {
+        if (binarySearch(arr2, number) !== -1) {
+            duplicates.push(number);
+        }
+    }
+
+    return duplicates;
+}
