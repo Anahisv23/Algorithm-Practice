@@ -23,6 +23,6 @@ const findIndex = (array, target) => {
 }
 
 // time complexity: o{log n}
-// space complexity: o(n)
-console.log("index", findIndex([2, 5, 7, 8, 10, 15, 20, 25], 1))
+// space complexity: o(1)
+console.log("index", findIndex([2, 5, 7, 8, 10, 15, 20, 25], 2))
 
