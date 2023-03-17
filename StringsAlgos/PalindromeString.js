@@ -16,8 +16,5 @@ const isPalindrome = (string) => {
   return isPalindrome;
 };
 
-console.log(isPalindrome("racecar"));
-console.log(isPalindrome("hello"));
-
 // time complexity: o(n)
 // space complexity: o(n)
