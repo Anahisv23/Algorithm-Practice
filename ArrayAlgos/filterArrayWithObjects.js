@@ -23,26 +23,3 @@ console.log(
 // time complexity: o(n)
 // space complexity: o(n)
 
-function insertionSort(array) {
-  let swapped = false;
-  for (let i = 1; i < array.length; i++) {
-    let elemBefore = i - 1;
-    if (array[elemBefore] > array[i]) {
-      let temp = array[elemBefore];
-      array[elemBefore] = array[i];
-      array[i] = temp;
-      swapped = true;
-    }
-    if (swapped && elemBefore !== 0) {
-      swapped = false;
-      for (let j = i - 1; j > 0; j--) {
-        if (array[j - 1] > array[j]) {
-          let temp = array[j - 1];
-          array[j - 1] = array[j];
-          array[j] = temp;
-        }
-      }
-    }
-  }
-  return array;
-}
