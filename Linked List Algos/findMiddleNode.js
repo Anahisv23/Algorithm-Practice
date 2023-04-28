@@ -34,6 +34,8 @@ class LinkedList {
     let secondMiddleNode  
   
     // traverse linkedList until middleIdx length to find second middle node
+    // basically get secondMiddleNode
+
     while(i <= middleIdx){
       secondMiddleNode = curr
       curr = curr.next
