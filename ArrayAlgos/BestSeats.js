@@ -11,9 +11,6 @@ function bestSeats(seats) {
       }
       if(zeroCount > maxCount){
         maxCount = zeroCount
-        console.log("mf", Math.floor(maxCount/2))
-        console.log(i)
-        console.log("idk", i - Math.floor(maxCount/2))
         bestIndex = i - Math.floor(maxCount/2) - 1
       }
       zeroCount = 0
