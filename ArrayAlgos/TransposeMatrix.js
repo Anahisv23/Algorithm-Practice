@@ -15,8 +15,8 @@ const transposeMatrix = matrix => {
     return transposedArray;
   }
   
-  // w means width 
-  // h means height 
+  // w means width (columns)
+  // h means height (rows)
   // time: o(w * h) we look at all elements in array
   // space: o(w * h) bcs we create new output matrix with the same amount of elements
   // transpose means switching rows to columns and columns to rows 
