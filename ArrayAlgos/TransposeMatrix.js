@@ -1,8 +1,8 @@
 const transposeMatrix = matrix => {
     let transposedArray = []
     
-    let columnAmount = matrix[0].length 
-    let rowAmount = matrix.length 
+    let columnAmount = matrix[0].length // 2
+    let rowAmount = matrix.length // 3
   
     for (let i = 0; i < columnAmount; i++){ 
       const arrToAdd = []
