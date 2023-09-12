@@ -13,5 +13,5 @@ const isHappy = n => {
     return sumOfDigits === 1;
   };
 
-// time: o(log n) bcs time it takes to run algorithm is proportional to the logarithmic of the input size n
-// space: o(1)
+// space complexity: o(1)
+// time complexity: o(log n) bcs time it takes to run algorithm is proportional to the logarithmic of the input size n
