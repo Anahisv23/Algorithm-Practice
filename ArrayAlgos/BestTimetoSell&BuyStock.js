@@ -11,7 +11,7 @@ const maxProfit = (prices) => {
         if (prices[i] < minPrice) { 
             minPrice = prices[i]; 
         } else { 
-        // if currNum is greater than minimum then come here and caluculate curr profit 
+        // if currNum is greater than minimum then come here and caluculate curr profit then we currentky have our most relevant minimum
         // if our currentProfit is greater than our maxProfit update it since we want to get as much profit as we can 
             let currentProfit = prices[i] - minPrice;
             if (currentProfit > maxProfit) {
