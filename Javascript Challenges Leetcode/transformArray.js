@@ -24,3 +24,5 @@ const map2 = (arr, fn) => {
 // time o(n) bcs we are looking at every elemnt in arr in the forEach and calling fn for each elem 
 // space o(1) bcs no additional data structure was made but its typically recommended we dont modify input 
 // ^ this approach doest follow functional programming since we are modifying input 
+
+// js will not throw an error if you pass arguments to a function that doesnt take any parameters 
