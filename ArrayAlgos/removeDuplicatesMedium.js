@@ -31,27 +31,20 @@ const removeDuplicates = (nums) => {
 
 // optimized 
 const removeDuplicates2 = (nums) => {
-    if (nums.length === 0) {
-        return 0;
+    if (nums.length <= 2) {
+        return nums.length;
     }
 
-    let k = 0; 
-
-    for (let i = 1; i < nums.length; i++) {
-        if (nums[i] !== nums[k]) {
-            k++;
-            nums[k] = nums[i]; 
+    let slow = 2;
+    for (let fast = 2; fast < nums.length; fast++) {
+        if (nums[fast] !== nums[slow - 2]) {
+            nums[slow] = nums[fast];
+            slow++;
         }
     }
-    return k + 1;
+
+    return slow;
 };
-
-
-const nums = [1, 1, 2, 2, 3, 4, 4, 5];
-const lengthWithoutDuplicates = removeDuplicates2(nums);
-
-
-console.log(nums.slice(0, lengthWithoutDuplicates)); // Output: [1, 2, 3, 4, 5]
 
 // time: o(n)
 // space: o(1)
