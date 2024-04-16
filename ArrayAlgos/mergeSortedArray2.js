@@ -1,4 +1,6 @@
 const merge = (nums1, m, nums2, n) => {
+    if(n === 0) return nums1 
+    
     let p2 = 0
 
     for (let i = m; i < nums1.length; i++){
@@ -10,6 +12,5 @@ const merge = (nums1, m, nums2, n) => {
 
     return nums1
 };
-
 // time: o(m log m)
 // space: o(1)
