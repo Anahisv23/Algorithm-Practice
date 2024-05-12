@@ -1,3 +1,5 @@
+// initial approach
+
 const checkSubarraySum = (nums, k) =>  {
     let sum = 0
     let count = 1
@@ -31,3 +33,30 @@ const isMultiplicative = (sum, k) => {
 
 // time complexity: o(n^2)
 // space complexity: o(1)
+
+// cleaner approach 
+
+const checkSubarraySum2 = (nums, k) => {
+    let p1 = 0;
+    let p2 = 1;
+
+    while (p1 < nums.length) {
+        let sum = nums[p1];
+        for (let i = p2; i < nums.length; i++) {
+            sum += nums[i];
+            if (isMultiplicative(sum, k)) return true;
+        }
+        p1++;
+        p2 = p1 + 1;
+    }
+    return false;
+}
+
+
+const isMultiplicative2 = (sum, k) => {
+    if(sum %  k === 0 ){
+        return true
+    } else {
+        return false 
+    }
+}
